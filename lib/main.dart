@@ -23,7 +23,8 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blue[700],
       ),
       body: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 30.0),
+        padding: const EdgeInsets.all(30.0),
+        margin: const EdgeInsets.all(30.0),
         color: Colors.blue,
         child: const Text('Hello container'),
       ),
