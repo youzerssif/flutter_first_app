@@ -3,34 +3,36 @@
 // The following code implements the [ScaleTransition] as seen in the video
 // above:
 
-import 'dart:ffi';
+// import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('First'),
-          centerTitle: true,
-          backgroundColor: Colors.red[700],
-        ),
-        body: Center(
-          child: Text(
-            'hello body center',
-            style: TextStyle(
-              fontSize: 20.0,
-              color: Colors.grey[600],
-              fontWeight: FontWeight.bold,
-              letterSpacing: 2.0,
-              fontFamily: 'indieFlower',
-            ),
-            ),
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: const Text('Click'),
-          backgroundColor: Colors.red[700],
-        ),
-        backgroundColor: Colors.blueGrey.shade200,
-      ),
+      home: Home(),
     ));
+
+class Home extends StatelessWidget {
+  // const Home({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('My first app flutter'),
+        centerTitle: true,
+        backgroundColor: Colors.blue[700],
+      ),
+      body: const Center(
+        child: Image(
+          image: AssetImage('assets/natural-5.jpg'),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Text('Click'),
+        backgroundColor: Colors.blue[700],
+      ),
+      backgroundColor: Colors.blueGrey.shade200,
+    );
+  }
+}
