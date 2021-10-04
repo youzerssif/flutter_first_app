@@ -23,12 +23,12 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blue[700],
       ),
       body: Center(
-          child: ElevatedButton.icon(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.mail,
-              ),
-              label: const Text('Send email'))),
+          child: IconButton(
+        onPressed: () {},
+        icon: const Icon(Icons.home),
+        iconSize: 60.0,
+        color: Colors.blue,
+      )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: const Text('Click'),
