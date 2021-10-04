@@ -22,13 +22,13 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blue[700],
       ),
-      body: const Center(
-        child: Icon(
-          Icons.airport_shuttle,
-          color: Colors.lightBlue,
-          size: 60.0,
-        ),
-      ),
+      body: Center(
+          child: ElevatedButton.icon(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.mail,
+              ),
+              label: const Text('Send email'))),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: const Text('Click'),
